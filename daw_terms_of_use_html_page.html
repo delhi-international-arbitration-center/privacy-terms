@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delhi Arbitration Week – Terms of Use</title>
+  <meta name="description" content="Terms of Use for the Delhi Arbitration Week mobile application operated by Coresphere100 Technologies Limited." />
+  <style>
+    :root {
+      --bg: #0b0f12;
+      --card: #12181d;
+      --text: #e7edf3;
+      --muted: #9fb3c8;
+      --accent: #68b5ff;
+      --border: #1e2a33;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --card: #ffffff;
+        --text: #0b1a26;
+        --muted: #375a7a;
+        --accent: #0b72e7;
+        --border: #e6eef5;
+      }
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 6rem;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: saturate(180%) blur(10px);
+      background: color-mix(in oklab, var(--bg) 85%, transparent);
+      border-bottom: 1px solid var(--border);
+      z-index: 20;
+    }
+    header .inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    h1 {
+      font-size: clamp(1.4rem, 1.2rem + 1.5vw, 2rem);
+      margin: 0.5rem 0 0.25rem;
+      letter-spacing: 0.2px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.98rem;
+      margin: 0.25rem 0 0;
+    }
+    .actions a {
+      display: inline-block;
+      padding: 0.6rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.92rem;
+    }
+    .actions a:hover { border-color: var(--accent); color: var(--accent); }
+
+    nav.toc {
+      margin: 1.25rem 0 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1rem 0.6rem;
+      background: color-mix(in oklab, var(--card) 96%, transparent);
+    }
+    nav.toc summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--muted);
+      list-style: none;
+    }
+    nav.toc ol {
+      margin: 0.75rem 0 0.75rem 1.25rem;
+    }
+    nav.toc a { color: inherit; text-decoration: none; }
+    nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+
+    article {
+      background: color-mix(in oklab, var(--card) 96%, transparent);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem 1.25rem 1.5rem;
+    }
+    article h2 {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+    }
+    article ol.sections { counter-reset: section; padding-left: 0; }
+    article ol.sections > li {
+      list-style: none;
+      margin: 1.25rem 0;
+      padding-top: 0.25rem;
+      border-top: 1px dashed var(--border);
+    }
+    article ol.sections > li:first-child { border-top: none; }
+    article ol.sections > li > h3::before {
+      counter-increment: section;
+      content: counter(section) ". ";
+      color: var(--muted);
+      font-weight: 600;
+    }
+    article p { margin: 0.5rem 0 0; }
+
+    .meta {
+      margin: 0.5rem 0 1rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      color: var(--muted);
+    }
+    .back-to-top {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 0.5rem 0.75rem;
+      border-radius: 999px;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+    .back-to-top:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* Print-friendly */
+    @media print {
+      header, .actions, nav.toc, .back-to-top { display: none !important; }
+      body { background: #fff; color: #000; }
+      article { border: none; padding: 0; }
+      a { text-decoration: none; color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#content" class="visually-hidden">Skip to content</a>
+
+  <header>
+    <div class="inner">
+      <div>
+        <h1 id="top">Terms of Use</h1>
+        <p class="subtitle">Last updated: August 25, 2025</p>
+      </div>
+      <div class="actions">
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="content" role="main">
+    <nav class="toc">
+      <details open>
+        <summary>Table of contents</summary>
+        <ol>
+          <li><a href="#desc">Description of the Service</a></li>
+          <li><a href="#acceptance">Acceptance of Terms and Changes</a></li>
+          <li><a href="#eligibility">Eligibility; Account Creation; Phone Verification</a></li>
+          <li><a href="#permitted">Permitted Use</a></li>
+          <li><a href="#prohibited">Prohibited Conduct</a></li>
+          <li><a href="#user-content">User Content and Profiles</a></li>
+          <li><a href="#ip">Intellectual Property</a></li>
+          <li><a href="#notifications">Push Notifications and Communications</a></li>
+          <li><a href="#third-party">Third-Party Services and Links</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#warranty">Disclaimer of Warranties</a></li>
+          <li><a href="#liability">Limitation of Liability</a></li>
+          <li><a href="#indemnification">Indemnification</a></li>
+          <li><a href="#termination">Termination and Suspension</a></li>
+          <li><a href="#modifications">Modifications to the App</a></li>
+          <li><a href="#export">Export Compliance</a></li>
+          <li><a href="#law">Governing Law and Dispute Resolution</a></li>
+          <li><a href="#class-actions">Class Actions and Jury Trial</a></li>
+          <li><a href="#notices">Notices</a></li>
+          <li><a href="#severability">Severability; No Waiver</a></li>
+          <li><a href="#assignment">Assignment</a></li>
+          <li><a href="#feedback">Feedback and Improvements</a></li>
+          <li><a href="#app-stores">Relationship with App Stores</a></li>
+          <li><a href="#entire">Entire Agreement</a></li>
+          <li><a href="#contact">Contact Information</a></li>
+        </ol>
+      </details>
+    </nav>
+
+    <article aria-labelledby="top">
+      <p class="meta">These Terms of Use, together with any documents expressly incorporated by reference, govern your access to and use of the Delhi Arbitration Week mobile application (the "App"), operated by Coresphere100 Technologies Limited ("we", "us", or "Company"). By downloading, registering for, accessing, or using the App you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+
+      <ol class="sections">
+        <li id="desc">
+          <h3>Description of the Service</h3>
+          <p>The App provides the official schedule and related information for the Delhi Arbitration Week event ("DAW"), which runs for one week each year. Core features include browsing the event schedule, viewing session details and speaker and committee biographies, receiving push notification reminders for upcoming sessions, and creating and managing an account using a phone number for verification and login. We may add, remove, or change features at any time.</p>
+        </li>
+        <li id="acceptance">
+          <h3>Acceptance of Terms and Changes</h3>
+          <p>We may modify these Terms at any time. Material changes will be communicated through in-App notices or other reasonable means. Your continued use of the App after changes are posted constitutes acceptance of the revised Terms. It is your responsibility to check these Terms periodically.</p>
+        </li>
+        <li id="eligibility">
+          <h3>Eligibility; Account Creation; Phone Verification</h3>
+          <p>You must be at least 13 years old to use the App, or at least 16 if located in the European Union. By creating an account you represent and warrant that you have legal capacity to enter into contracts. Accounts are created by providing a phone number you control, and completing the verification process we require. You must provide accurate information, keep your account credentials secure, and promptly notify us of any unauthorized access. You are responsible for all activity that occurs through your account.</p>
+        </li>
+        <li id="permitted">
+          <h3>Permitted Use</h3>
+          <p>Subject to these Terms, you may use the App to access DAW schedules and related content, receive operational push notifications, manage your account, and contact our support. Your use must be personal and non-commercial unless we grant a separate license in writing.</p>
+        </li>
+        <li id="prohibited">
+          <h3>Prohibited Conduct</h3>
+          <p>You must not: (a) reverse engineer, decompile, disassemble, modify, or attempt to derive source code from the App; (b) use automated tools to scrape, extract or copy App content; (c) transmit content that is unlawful, abusive, defamatory, obscene, or otherwise objectionable; (d) impersonate others or create multiple accounts to avoid restrictions; (e) interfere with the operation or security of the App; or (f) remove or alter any proprietary notices. We reserve the right to investigate and take legal action against anyone who violates these rules.</p>
+        </li>
+        <li id="user-content">
+          <h3>User Content and Profiles</h3>
+          <p>You may be able to create a display name and profile details. You retain ownership of the information you upload to your profile, subject to the license you grant us to operate the App. By providing profile information you grant us a worldwide, non-exclusive, royalty free license to use, reproduce, display, and distribute such information as necessary to provide the App. You represent that any information you provide does not infringe third party rights and is not false or misleading.</p>
+        </li>
+        <li id="ip">
+          <h3>Intellectual Property</h3>
+          <p>All intellectual property rights in the App, including software, design, text, graphics, schedules, speaker biographies, and other content, are owned by or licensed to the Company. Except for the limited license to use the App as provided in these Terms, no right, title, or interest is transferred to you. Unauthorized use may infringe copyright, trademark, and other laws.</p>
+        </li>
+        <li id="notifications">
+          <h3>Push Notifications and Communications</h3>
+          <p>The App uses push notifications for operational purposes only, specifically to deliver session reminders and important event updates. We do not use push notifications for marketing or promotional messages. Push notifications are delivered via third party services, including Firebase Cloud Messaging for Android, and Apple Push Notification Service for iOS, and require device permission. You may disable notifications in your device settings, but doing so may prevent you from receiving timely reminders.</p>
+        </li>
+        <li id="third-party">
+          <h3>Third-Party Services and Links</h3>
+          <p>The App may link to third-party websites, services, or include third-party software development kits and libraries. Your use of third-party services is subject to the terms and privacy policies of those providers. We do not control third-party content and are not responsible for it.</p>
+        </li>
+        <li id="privacy">
+          <h3>Privacy</h3>
+          <p>Our Privacy Policy describes how we collect, use, disclose, and protect personal information, including phone numbers and device identifiers. The Privacy Policy is incorporated into these Terms by reference and forms part of the agreement between you and the Company.</p>
+        </li>
+        <li id="warranty">
+          <h3>Disclaimer of Warranties</h3>
+          <p>The App is provided "as is" and "as available", without warranties of any kind, express or implied, to the fullest extent permitted by applicable law. We do not warrant that the App will be uninterrupted, error free, secure, or free from harmful components. We do not warrant the accuracy, completeness, reliability, or timeliness of schedule information or other content. You use the App at your sole risk.</p>
+        </li>
+        <li id="liability">
+          <h3>Limitation of Liability</h3>
+          <p>To the maximum extent permitted by law, in no event will the Company, its officers, directors, employees, agents, or affiliates be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, including lost profits, loss of data, loss of goodwill, or costs of procurement of substitute services, arising from or related to your use of or inability to use the App, even if advised of the possibility of such damages. Our aggregate liability for direct damages arising out of or related to these Terms will not exceed INR 5,000 or the amount you paid to us in the six months preceding the claim, whichever is lower, except where applicable law requires a different remedy.</p>
+        </li>
+        <li id="indemnification">
+          <h3>Indemnification</h3>
+          <p>You agree to indemnify, defend, and hold harmless the Company and its officers, directors, employees and agents from and against any claims, liabilities, damages, losses or expenses, including reasonable legal fees, arising from your breach of these Terms, your violation of applicable law, or your misuse of the App.</p>
+        </li>
+        <li id="termination">
+          <h3>Termination and Suspension</h3>
+          <p>We may suspend or terminate your access to the App at our discretion for violations of these Terms, suspected fraud, security concerns, or prolonged inactivity, with or without notice. You may delete your account through the App or by contacting support. Upon termination we may delete or retain account data as described in our Privacy Policy and as required by law.</p>
+        </li>
+        <li id="modifications">
+          <h3>Modifications to the App</h3>
+          <p>We may modify, update, or discontinue features of the App at any time. You are responsible for installing updates that we provide. We are not liable for any changes, suspensions, or discontinuation of the App or features.</p>
+        </li>
+        <li id="export">
+          <h3>Export Compliance</h3>
+          <p>You agree to comply with all applicable export and import laws and regulations in your use of the App. You will not export, reexport, or transfer the App in violation of export control laws.</p>
+        </li>
+        <li id="law">
+          <h3>Governing Law and Dispute Resolution</h3>
+          <p>These Terms are governed by the laws of India. You agree that any dispute, claim, or controversy arising out of or relating to these Terms or the App will be subject to the exclusive jurisdiction of the courts located in Fone, India. Prior to initiating any formal legal proceeding, you agree to attempt to resolve the dispute informally by contacting us at <a href="mailto:diacdaw@gmail.com">diacdaw@gmail.com</a>.</p>
+        </li>
+        <li id="class-actions">
+          <h3>Class Actions and Jury Trial</h3>
+          <p>To the extent permitted by law, you and the Company each waive any right to a jury trial and to participate in any class, collective, or representative action.</p>
+        </li>
+        <li id="notices">
+          <h3>Notices</h3>
+          <p>We may provide notices to you via email, in-App messages, or by posting notices on the App. Legal notices to the Company should be sent to <a href="mailto:diacdaw@gmail.com">diacdaw@gmail.com</a>, or by mail to the corporate address we publish. Notices to you will be considered given when sent to the email address or phone number associated with your account.</p>
+        </li>
+        <li id="severability">
+          <h3>Severability; No Waiver</h3>
+          <p>If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions will remain in full force and effect. Our failure to exercise or enforce any right or provision will not constitute a waiver of such right or provision.</p>
+        </li>
+        <li id="assignment">
+          <h3>Assignment</h3>
+          <p>We may assign or transfer these Terms, and our rights and obligations hereunder, to an affiliate or a successor in interest, including in connection with a merger or sale. You may not assign your rights under these Terms without our prior written consent.</p>
+        </li>
+        <li id="feedback">
+          <h3>Feedback and Improvements</h3>
+          <p>If you submit suggestions, feedback, or ideas regarding the App, you grant us a perpetual, irrevocable, worldwide, royalty free license to use, copy, modify, publish, and incorporate such feedback into the App without obligation to you.</p>
+        </li>
+        <li id="app-stores">
+          <h3>Relationship with App Stores</h3>
+          <p>If you download the App from the Apple App Store or Google Play Store, you agree to comply with their respective distribution terms. Apple and Google are third party beneficiaries of certain provisions in these Terms, and you acknowledge that they are not responsible for the App, content, or enforcement of these Terms.</p>
+        </li>
+        <li id="entire">
+          <h3>Entire Agreement</h3>
+          <p>These Terms, together with the Privacy Policy and any other documents expressly incorporated by reference, constitute the entire agreement between you and the Company relating to your use of the App, and supersede any prior agreements between you and the Company.</p>
+        </li>
+        <li id="contact">
+          <h3>Contact Information</h3>
+          <p>For support or questions, contact us at:<br>
+            Email: <a href="mailto:diacdaw@gmail.com">diacdaw@gmail.com</a><br>
+            Phone: <a href="tel:+919591854290">+91 9591854290</a>
+          </p>
+          <p>By creating an account or using the App you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
+        </li>
+      </ol>
+
+      <footer>
+        <small>© <span id="year"></span> Coresphere100 Technologies Limited. All rights reserved.</small>
+        <small><a href="#top">Back to top</a></small>
+      </footer>
+    </article>
+  </main>
+
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑ Top</a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!--
+    Notes:
+    - This page is designed to be pasted as a single HTML file into a website or WebView.
+    - It supports dark/light mode, printing, and internal anchors.
+    - Keep the text content exactly as provided by legal.
+  -->
+</body>
+</html>
